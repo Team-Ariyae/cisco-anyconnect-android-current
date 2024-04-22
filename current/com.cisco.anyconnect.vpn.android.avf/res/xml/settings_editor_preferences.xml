@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectListPreference android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_label_remote_control" android:key="RemoteControl" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_block_untrusted_servers_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_label_block_untrusted_servers" android:key="BlockUntrustedServers" android:summary="@string/preference_description_block_untrusted_servers" android:defaultValue="true" />
+        <include layout="@layout/list_divider_end" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_fips_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_fips" android:key="Fips" android:summary="@string/preference_description_fips" android:defaultValue="false" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_ocsp_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_ocsp" android:key="Ocsp" android:summary="@string/preference_description_ocsp" android:defaultValue="false" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_strict_mode_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_strict_mode" android:key="Strict_Mode" android:summary="@string/preference_description_strict_mode" android:defaultValue="false" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_debug_mode_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_debug_mode" android:key="DebugMode" android:summary="@string/preference_description_debug_mode" android:defaultValue="false" />
+        <include layout="@layout/list_divider" />
+        <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:id="@id/settings_disable_pac_proxy_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_disable_pac_proxy" android:key="DisablePACProxy" android:summary="@string/preference_description_disable_pac_proxy" android:defaultValue="false" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/nvm_settings" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:id="@id/settings_advanced_settings_footer" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advanced_settings_footer" style="@style/default_style_footer" />
+</LinearLayout>

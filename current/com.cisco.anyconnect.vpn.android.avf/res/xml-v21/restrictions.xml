@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction android:description="@string/restriction_name_desc" android:title="Connection Name" android:key="vpn_connection_name" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_host_desc" android:title="Host" android:key="vpn_connection_host" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_protocol_desc" android:entries="@array/vpn_connection_protocol_entries" android:title="Protocol" android:key="vpn_connection_protocol" android:entryValues="@array/vpn_connection_protocol_values" android:restrictionType="choice" />
+    <restriction android:description="@string/restriction_ipsec_auth_mode_desc" android:entries="@array/vpn_connection_ipsec_auth_mode_entries" android:title="IPsec Authentication Mode" android:key="vpn_connection_ipsec_auth_mode" android:entryValues="@array/vpn_connection_ipsec_auth_mode_values" android:restrictionType="choice" />
+    <restriction android:description="@string/restriction_ipsec_ike_identity_desc" android:title="IKE identity" android:key="vpn_connection_ipsec_ike_identity" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_keychain_desc" android:title="KeyChain Certificate Alias" android:key="vpn_connection_keychain_cert_alias" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_perapp_legacy_desc" android:title="Per App VPN Allowed Apps" android:key="vpn_connection_perapp" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_perapp_include_desc" android:title="Per App VPN Allowed Apps" android:key="vpn_connection_allowed_apps" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_perapp_exclude_desc" android:title="Per App VPN Disallowed Apps" android:key="vpn_connection_disallowed_apps" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_allow_bypass_desc" android:title="Allow Apps to Bypass VPN Tunnel" android:key="vpn_connection_allow_bypass" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_yubikey_cert_slot_desc" android:title="YubiKey Certificate Slot" android:key="vpn_connection_yubikey_cert_slot" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_replace_existing_profile" android:title="Replace Existing Profile" android:key="vpn_setting_replace_existing_profile" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_apply_perapp_to_profile" android:title="Apply Per-App Rules to Profile Imported Configurations" android:key="vpn_setting_apply_perapp_to_profile" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_set_active_desc" android:title="Set Active" android:key="vpn_connection_set_active" android:defaultValue="true" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_block_untrusted_desc" android:title="Block Untrusted Servers" android:key="vpn_setting_block_untrusted_servers" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_fips_desc" android:title="Fips Mode" android:key="vpn_setting_fips_mode" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_uri_external_control_desc" android:title="URI External Control" android:key="vpn_setting_uri_external_control" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_setting_strict_cert_desc" android:title="Strict Mode" android:key="vpn_setting_strict_mode" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_revocation_desc" android:title="Certificate Revocation" android:key="vpn_setting_certificate_revocation" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_profile_desc" android:title="AnyConnect Profile" android:key="vpn_connection_profile" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_setting_device_id_desc" android:title="Device Identifier" android:key="vpn_connection_device_id" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_setting_report_hardware_id_desc" android:title="Report Hardware Identifiers (MAC address and IMEI) for VPN authentication" android:key="vpn_connection_report_hardware_id" android:defaultValue="true" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_save_credentials_desc" android:title="Allow users to save credentials" android:key="vpn_setting_allow_saved_credentials" android:defaultValue="false" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_accept_seula_for_user_desc" android:title="Accept SEULA for Users" android:key="accept_seula_for_user" android:defaultValue="false" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_setting_block_create_connection_desc" android:title="Block users from creating new VPN connections" android:key="block_user_create_vpn_connection" android:defaultValue="false" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_vpn_configuration_list_desc" android:title="VPN Connection List" android:key="vpn_configuration_list" android:restrictionType="bundle_array">
+        <restriction android:title="VPN Connection" android:key="vpn_configuration" android:restrictionType="bundle">
+            <restriction android:description="@string/restriction_name_desc" android:title="Display Name" android:key="vpn_name" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_host_desc" android:title="Host" android:key="vpn_host" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_protocol_desc" android:entries="@array/vpn_connection_protocol_entries" android:title="Protocol" android:key="vpn_protocol" android:entryValues="@array/vpn_connection_protocol_values" android:restrictionType="choice" />
+            <restriction android:description="@string/restriction_ipsec_auth_mode_desc" android:entries="@array/vpn_connection_ipsec_auth_mode_entries" android:title="IPsec Authentication Mode" android:key="vpn_ipsec_auth_mode" android:entryValues="@array/vpn_connection_ipsec_auth_mode_values" android:restrictionType="choice" />
+            <restriction android:description="@string/restriction_ipsec_ike_identity_desc" android:title="IKE identity" android:key="vpn_ipsec_ike_identity" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_keychain_desc" android:title="KeyChain Certificate Alias" android:key="vpn_keychain_cert_alias" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_perapp_include_desc" android:title="Per App VPN Allowed Apps" android:key="vpn_allowed_apps" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_perapp_exclude_desc" android:title="Per App VPN Disallowed Apps" android:key="vpn_disallowed_apps" android:restrictionType="string" />
+            <restriction android:description="@string/restriction_allow_bypass_desc" android:title="Allow Apps to Bypass VPN Tunnel" android:key="vpn_allow_bypass" android:restrictionType="bool" />
+            <restriction android:description="@string/restriction_set_active_desc" android:title="Set Active" android:key="vpn_set_active" android:defaultValue="false" android:restrictionType="bool" />
+            <restriction android:description="@string/restriction_yubikey_cert_slot_desc" android:title="YubiKey Certificate Slot" android:key="vpn_yubikey_cert_slot" android:restrictionType="string" />
+        </restriction>
+    </restriction>
+    <restriction android:description="@string/restriction_set_umbrella_org_id" android:title="Umbrella Organization Id" android:key="umbrella_org_id" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_set_umbrella_reg_token" android:title="Umbrella Registration Token" android:key="umbrella_reg_token" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_set_umbrella_va_fqdns" android:title="Umbrella VA FQDNs list" android:key="umbrella_va_fqdns" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_set_umbrella_user_domains" android:title="Umbrella Domain list" android:key="umbrella_user_domains" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_admin_email_desc" android:title="Administrator Email Address" android:key="admin_email" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_vpn_always_on_umbrella_only_desc" android:title="Enable Always-On VPN Mode for Umbrella Protection Only" android:key="vpn_always_on_umbrella_only" android:defaultValue="false" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_set_umbrella_gsuite_flag" android:title="Umbrella G-suite Flag" android:key="umbrella_gsuite_flag" android:restrictionType="bool" />
+    <restriction android:description="@string/restriction_set_umbrella_user_identity" android:title="Umbrella Identity" android:key="umbrella_user_identity" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_set_umbrella_serial_number" android:title="Umbrella Serial Number" android:key="umbrella_serial_number" android:restrictionType="string" />
+</restrictions>

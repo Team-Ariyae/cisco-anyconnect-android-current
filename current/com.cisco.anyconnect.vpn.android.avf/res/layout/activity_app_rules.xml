@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/apprules_ll_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/apprules_sv_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/apprules_ll_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/apprules_tv_allowed_apps_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/allowed_apps_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/apprules_ll_allowed_apps_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/apprules_tv_disallowed_apps_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disallowed_apps_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/apprules_ll_disallowed_apps_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

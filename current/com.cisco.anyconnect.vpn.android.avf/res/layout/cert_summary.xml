@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cert_summary_ll_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/cert_summary_sv_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/cert_summary_ll_confirm_container" android:padding="@dimen/list_text_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/subject_name_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_subject_name_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:orientation="vertical" android:id="@id/subject_name_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/issuer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_issuer_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:orientation="vertical" android:id="@id/issuer_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/validity_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_validity_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:orientation="vertical" android:id="@id/validity_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/signature_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_signature_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:orientation="vertical" android:id="@id/signature_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/key_usage_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_key_usage_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/key_usage_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/extended_key_usage_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cert_summary_extended_key_usage_label" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/extended_key_usage_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/buttonbar_view_btn_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/cert_summary_accept_import" style="@style/default_style_button" />
+</LinearLayout>

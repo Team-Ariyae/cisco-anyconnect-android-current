@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/generic_list_ll_main_container_double" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_item_double" />
+    <com.cisco.anyconnect.vpn.android.ui.view.VpnToggle android:id="@id/cb_vpntoggle" android:paddingRight="16.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@string/on" android:textOff="@string/off" android:includeFontPadding="false" />
+</LinearLayout>

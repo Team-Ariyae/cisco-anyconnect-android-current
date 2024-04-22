@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/advanced_connection_editor_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:anyconnect="http://​schemas.​cisco.com/​anyconnect/​android">
+    <ScrollView android:id="@id/advanced_connection_scroll_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/advanced_connection_editor_ll_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/advanced_connection_editor_tv_profile_imported_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_header_subtext" />
+            <LinearLayout android:orientation="vertical" android:id="@id/advanced_connection_editor_ll_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <com.cisco.anyconnect.vpn.android.ui.view.ButtonBar android:id="@id/advanced_connection_editor_buttonbar" android:layout_width="fill_parent" android:layout_height="wrap_content" anyconnect:negative_button_label="@string/cancel" anyconnect:positive_button_label="@string/btn_done" />
+</LinearLayout>

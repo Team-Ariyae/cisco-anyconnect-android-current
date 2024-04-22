@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#ff000000</color>
+    <color name="card_stroke_dark">#ff39393b</color>
+    <color name="dark_cool_grey_3">#ff242526</color>
+    <color name="dark_gray_text">#ffb5b5b5</color>
+    <color name="foreground">#ffffffff</color>
+    <color name="foreground_text">#ffffffff</color>
+    <color name="light_blue_gray_surface">#ff474b4c</color>
+    <color name="status_blue_burnt_3">#ffd6f2ff</color>
+    <color name="status_blue_wash_2">#ff247296</color>
+    <color name="status_blue_wash_3">#ff105270</color>
+    <color name="status_green_wash_3">#ff1b4f0f</color>
+    <color name="status_red_wash_3">#ff82000b</color>
+    <color name="status_yellow_wash_3">#ff8c7300</color>
+</resources>

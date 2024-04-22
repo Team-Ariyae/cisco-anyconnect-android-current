@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/cert_management_ll_server_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/cert_management_rv_content" android:paddingBottom="16.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <RelativeLayout android:id="@id/nothing_here_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/image_cert_empty" android:layout_width="wrap_content" android:layout_height="200.0dip" android:src="@drawable/ic_certificate_empty" />
+        <TextView android:id="@id/nothing_here_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/cert_no_certs" android:layout_below="@id/image_cert_empty" android:layout_centerHorizontal="true" style="@style/TextAppearance.MaterialComponents.Headline5" />
+    </RelativeLayout>
+</RelativeLayout>

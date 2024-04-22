@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cisco.anyconnect.nvm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application>
+        <activity
+            android:name="com.cisco.anyconnect.nvm.ui.NVMAupActivity"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.cisco.anyconnect.nvm.SHOW_NVM_AUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.cisco.anyconnect.nvm.services.NVMService"
+            android:label="NVMService"
+            android:process=":NVMService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${applicationId}_namonitoraction" />
+            </intent-filter>
+        </service>
+
+	<service android:name="com.cisco.anyconnect.nvm.services.NVMJobService"
+		android:label="NVMJobService" android:permission="android.permission.BIND_JOB_SERVICE">
+	</service>
+
+        <receiver android:name="com.cisco.anyconnect.nvm.receivers.NVMBootStrapReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.cisco.anyconnect.nvm.receivers.NVMStartEventsReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="com.cisco.anyconnect.vpn.android.EULA_ACTION" />
+                <action android:name="com.cisco.anyconnect.vpn.android.VPN_SERVICE_START_INTENT"/>
+                <action android:name="com.cisco.anyconnect.nvm.NPA_PROFILE_AVAILABLE"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receivers.ApplicationUpdateReceiver" 
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.cisco.anyconnect.nvm.providers.PreferencesProvider"
+            android:authorities="com.cisco.anyconnect.nvm.providers.PreferencesProvider"
+            android:exported="false"
+            android:multiprocess="false">
+        </provider>
+
+    </application>
+
+</manifest>

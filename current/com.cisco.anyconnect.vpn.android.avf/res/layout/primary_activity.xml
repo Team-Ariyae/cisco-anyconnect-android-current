@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/primary_ll_master" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="?android:colorBackground" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" app:liftOnScroll="true" style="@style/CSCToolbar">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/primary_rl_sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/csc_logo" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_any_connect_secure_mobility_client" />
+            <TextView android:textSize="26.0sp" android:id="@id/csc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/app_name" android:layout_marginStart="14.0dip" android:layout_toStartOf="@id/overflow_menu_image" android:layout_toEndOf="@id/csc_logo" app:fontFamily="@font/cisco_sans_tt_thin" />
+            <ImageButton android:id="@id/overflow_menu_image" android:background="?selectableItemBackgroundBorderless" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/dots_vertical" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/primary_activity_fragments" />
+            <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_horizontal" android:paddingTop="@dimen/list_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/cisco_logo_grey" app:tint="@color/card_stroke_dark" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

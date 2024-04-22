@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/stat_list_ll_main_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/stat_list_label_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/default_style_content_text_label" />
+    <TextView android:id="@id/stat_list_value_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/default_style_content_text_value" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:gravity="left" android:id="@id/cert_mgmt_list_cv_main_container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_text_padding" android:layout_marginStart="@dimen/list_text_padding" android:layout_marginEnd="@dimen/list_text_padding" app:cardBackgroundColor="@color/dark_cool_grey_3" app:contentPadding="16.0dip" style="@style/Widget.Material3.CardView.Filled"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:id="@id/cert_mgmt_list_cert_cn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/cert_mgmt_list_cert_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:id="@id/cert_mgmt_list_cert_issuer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:id="@id/cert_mgmt_list_cert_not_yet_valid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:id="@id/cert_mgmt_list_cert_expiration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_statistics_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/sv_umbrella_statistics_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_umbrella_statistics_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/tv_umbrella_statistics_umbrella_security_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/umbrella_dns_ip_security_information" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/ll_umbrella_statistics_dns_ip_information_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/tv_umbrella_statistics_empty" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

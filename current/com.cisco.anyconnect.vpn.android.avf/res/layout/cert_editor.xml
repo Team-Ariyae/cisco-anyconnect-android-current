@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cert_editor_ll_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:choiceMode="singleChoice" style="@style/default_style_list_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cert_editor_ll_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cert_editor_btn_import" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/btn_import" android:layout_weight="1.0" style="@style/default_style_button" />
+    </LinearLayout>
+</LinearLayout>

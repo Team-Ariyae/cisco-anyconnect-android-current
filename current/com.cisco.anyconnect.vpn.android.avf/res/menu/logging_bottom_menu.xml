@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_notice_info" android:enabled="true" android:id="@id/message_page" android:title="@string/message_log_header" />
+    <item android:icon="@drawable/ic_system_info" android:enabled="true" android:id="@id/system_page" android:title="@string/system_log_tab_header" />
+    <item android:icon="@drawable/ic_debug_info" android:enabled="true" android:id="@id/debug_page" android:title="@string/debug_log_tab_header" />
+</menu>

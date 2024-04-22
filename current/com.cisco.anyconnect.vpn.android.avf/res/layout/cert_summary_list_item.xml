@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/cert_summary_list_item_ll_main_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/cert_field_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/default_style_content_text_label" />
+    <TextView android:id="@id/cert_field_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/default_style_content_text_value" />
+</LinearLayout>

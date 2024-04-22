@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/localization_server_import_address" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/localization_server_import_address_label" android:key="address" android:summary="@string/not_set" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/localization_server_import_langcode" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/localization_server_import_langcode_label" android:key="langcode" android:summary="@string/not_set" />
+</LinearLayout>

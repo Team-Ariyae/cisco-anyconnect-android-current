@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widget_layout" android:background="@drawable/popup_menu_background" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_any_connect_secure_mobility_client" android:contentDescription="@null" />
+    <ProgressBar android:id="@id/widget_progress" android:layout_width="fill_parent" android:layout_height="5.0dip" android:maxHeight="5.0dip" android:progress="0" style="@style/ACProgressBarHorizontal" />
+</LinearLayout>

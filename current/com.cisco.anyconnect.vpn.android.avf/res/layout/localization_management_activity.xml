@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/localization_management_ll_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/localization_management_ll_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" style="@style/default_style_list_view" />
+    </LinearLayout>
+    <TextView android:id="@id/localization_management_locales_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/localization_management_locales_header" style="@style/default_style_header_bar_big" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/localization_management_locales_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+    </ScrollView>
+</LinearLayout>

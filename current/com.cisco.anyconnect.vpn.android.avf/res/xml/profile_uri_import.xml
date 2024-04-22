@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/profile_uri_import_address" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/profile_uri_import_uri_label" android:key="uri" android:summary="@string/not_set" />
+    <include layout="@layout/list_divider" />
+    <include layout="@layout/list_divider_end" />
+</LinearLayout>

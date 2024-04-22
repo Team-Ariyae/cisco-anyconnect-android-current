@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/connection_summary_ll_main_container" android:layout_width="wrap_content" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:anyconnect="http://​schemas.​cisco.com/​anyconnect/​android">
+    <LinearLayout android:orientation="vertical" android:id="@id/connection_summary_ll_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" style="@style/default_style_list_view" />
+        <TextView android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_available" style="@style/default_style_content_empty" />
+    </LinearLayout>
+    <com.cisco.anyconnect.vpn.android.ui.view.ButtonBar android:id="@id/connection_summary_buttonbar" android:layout_width="fill_parent" android:layout_height="wrap_content" anyconnect:negative_button_label="@string/cancel" anyconnect:positive_button_label="@string/disconnect_button_text" />
+</LinearLayout>

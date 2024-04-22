@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/ll_generic_list_text_wrap" android:paddingLeft="@dimen/list_text_padding" android:paddingRight="@dimen/list_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/generic_list_item_label_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" app:fontFamily="sans-serif-medium" style="@style/default_style_list_item_double_primary_text" />
+    <TextView android:id="@id/generic_list_item_value_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:fontFamily="sans-serif-medium" style="@style/default_style_list_item_double_sub_text" />
+</LinearLayout>

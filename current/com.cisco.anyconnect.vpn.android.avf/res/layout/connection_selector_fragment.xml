@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_master" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textFilterEnabled="false" style="@style/default_style_list_view" />
+    <RelativeLayout android:id="@id/nothing_here_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/image_empty" android:layout_width="wrap_content" android:layout_height="200.0dip" android:src="@drawable/ic_empty" />
+        <TextView android:id="@id/nothing_here_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/there_seems_to_be_nothing_here" android:layout_below="@id/image_empty" android:layout_centerHorizontal="true" style="@style/TextAppearance.MaterialComponents.Headline5" />
+        <TextView android:textColor="@color/dark_gray_text" android:id="@id/add_connection_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/add_a_connection" android:layout_below="@id/nothing_here_text" android:layout_centerHorizontal="true" style="@style/TextAppearance.MaterialComponents.Headline6" />
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_add_vpn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/plus" android:layout_alignParentBottom="true" android:contentDescription="@string/add_vpn" android:layout_alignParentEnd="true" app:backgroundTint="@color/status_blue_wash_3" app:elevation="0.0dip" app:pressedTranslationZ="0.0dip" app:rippleColor="@color/cisco_blue" app:tint="@color/status_blue" />
+</RelativeLayout>

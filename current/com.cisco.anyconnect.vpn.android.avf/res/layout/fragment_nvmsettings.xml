@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/preference_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:listDivider" android:showDividers="end|middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nvm_settings_header" style="@style/default_style_header_bar_big" />
+    <FrameLayout android:id="@id/preference_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

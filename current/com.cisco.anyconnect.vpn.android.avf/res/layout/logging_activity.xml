@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/logging_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/logging_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_navigation_logging" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:theme="@style/CSCNavigationView" android:id="@id/bottom_navigation_logging" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:backgroundTint="@color/status_blue_wash_3" app:menu="@menu/logging_bottom_menu" />
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

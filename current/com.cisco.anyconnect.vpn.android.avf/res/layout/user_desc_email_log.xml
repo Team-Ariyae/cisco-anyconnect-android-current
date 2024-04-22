@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/user_desc_ll_main_container" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:anyconnect="http://​schemas.​cisco.com/​anyconnect/​android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/log_user_input" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/user_desc_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/user_desc_email_log_header" style="@style/TextAppearance.Material3.TitleMedium" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/problem_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/user_desc_email_log_problem_label" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:helperText="@string/not_set" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textFilter|textAutoCorrect|textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/reproduce_steps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/user_desc_email_log_steps_label" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:helperText="@string/not_set" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textFilter|textAutoCorrect|textMultiLine|textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/email_time_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/time_of_occurrence" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:helperText="@string/not_set" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.cisco.anyconnect.vpn.android.ui.view.ButtonBar android:id="@id/logging_user_input" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" anyconnect:negative_button_label="@string/cancel" anyconnect:positive_button_label="@string/continue_send" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

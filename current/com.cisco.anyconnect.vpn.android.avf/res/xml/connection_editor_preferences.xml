@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:anyconnect="http://​schemas.​cisco.com/​anyconnect/​android">
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/connection_editor_connection_name" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/connection_name_label" android:key="name" android:summary="@string/not_set_optional" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/connection_editor_connection_host" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/connection_hostname_label" android:key="host" android:summary="@string/not_set" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectAdvancedConnectionPreference android:gravity="center_vertical" android:id="@id/connection_editor_advanced" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/advanced_connection_label" android:key="advanced_connection" android:summary="@string/advanced_connection_summary" />
+    <include layout="@layout/list_divider_end" />
+</LinearLayout>

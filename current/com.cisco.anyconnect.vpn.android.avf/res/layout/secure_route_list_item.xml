@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/secure_route_tv_info_text" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/default_style_content_text_value"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

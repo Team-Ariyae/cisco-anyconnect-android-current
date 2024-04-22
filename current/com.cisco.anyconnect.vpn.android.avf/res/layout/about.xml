@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/about_sv_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/about_ll_main_container" android:paddingTop="16.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/coordinatorLayout" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/csc_products" android:layout_width="0.0dip" android:layout_height="100.0dip" app:flow_horizontalAlign="start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/csc_logo" app:layout_constraintHorizontal_weight="2.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_cisco_secure_products" />
+            <ImageView android:id="@id/csc_logo" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/ic_any_connect_secure_mobility_client" android:layout_marginStart="32.0dip" app:flow_horizontalAlign="end" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/csc_products" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:id="@id/about_tv_ac_copyright" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/about_ll_tos_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/about_ll_scroll_container" android:padding="@dimen/list_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/about_tv_ac_version" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.MaterialComponents.Subtitle1" />
+            <GridLayout android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="0" android:text="@string/supported_features" android:layout_row="0" style="@style/GridName" />
+                <TextView android:id="@id/supported_features" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="1" android:layout_row="0" style="@style/GridValue" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="0" android:text="@string/device_id" android:layout_row="2" style="@style/GridName" />
+                <TextView android:id="@id/about_tv_ac_device_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_column="1" android:layout_row="2" style="@style/GridValue" />
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

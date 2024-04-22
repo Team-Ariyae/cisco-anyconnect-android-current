@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCertificatePreference android:ellipsize="end" android:gravity="center_vertical" android:id="@id/connection_editor_cert_cert" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/certificate_label" android:key="cert_summary" android:summary="@string/not_set" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectButtonPreference android:gravity="center_vertical" android:id="@id/connection_editor_app_rules" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/app_rules" android:key="app_rules" android:summary="@string/app_rules_description" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectCheckboxPreference android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_label_connect_with_ipsec" android:key="ipsec_active" android:summary="@string/preference_summary_connect_with_ipsec" android:defaultValue="false" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectListPreference android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/preference_label_authentication" android:key="ipsec_auth_mode" android:defaultValue="EAP-AnyConnect" />
+    <include layout="@layout/list_divider" />
+    <com.cisco.anyconnect.vpn.android.ui.preferences.AnyConnectEditTextPreference android:gravity="center_vertical" android:id="@id/connection_editor_ike_identity" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:title="@string/connection_ike_identity_label" android:key="ike_identity" android:summary="@string/not_set" />
+    <include layout="@layout/list_divider_end" />
+</LinearLayout>

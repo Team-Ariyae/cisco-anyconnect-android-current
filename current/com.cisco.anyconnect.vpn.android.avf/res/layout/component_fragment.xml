@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MaterialContainerCard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView android:id="@id/component_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ACMaterialYouCard">
+            <RelativeLayout android:id="@id/ll_component_header_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/left_drawable" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" app:tint="@color/foreground" />
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/left_drawable" android:paddingStart="10.0dip" android:layout_toStartOf="@id/vpn_switch" android:layout_toEndOf="@id/left_drawable">
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_component_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" app:fontFamily="sans-serif-medium" style="@style/default_style_list_item_double_primary_text" />
+                    <TextView android:gravity="center_vertical" android:id="@id/tv_component_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:layout_weight="1.0" app:fontFamily="sans-serif-medium" style="@style/default_style_list_item_double_sub_text" />
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/vpn_switch" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progress_indicator" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="0.0dip" android:indeterminate="true" android:layout_centerVertical="true" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" app:indicatorColor="@color/cisco_blue_wash_1" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_component" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

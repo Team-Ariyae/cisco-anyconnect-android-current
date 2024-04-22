@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/detailed_stats_ll_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/detailed_stats_sv_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/detailed_stats_ll_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/detailed_stats_tv_connection_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/connection_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_connection_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_address_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_address_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_bytes_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bytes_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_bytes_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_frames_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frames_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_frames_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_control_frames_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/control_frames_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_control_frames_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_transport_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/transport_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_transport_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_feature_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/feature_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_feature_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_secure_routes_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/secure_routes_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_secure_routes_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_non_secure_routes_info_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/non_secure_routes_info_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_non_secure_routes_info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_blocked_apps_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/blocked_apps_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_blocked_apps_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_app_rule_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_rule_header" style="@style/default_style_header_bar_big" />
+            <LinearLayout android:id="@id/detailed_stats_ll_app_rule_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/default_style_list_view" />
+            <TextView android:id="@id/detailed_stats_tv_empty" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

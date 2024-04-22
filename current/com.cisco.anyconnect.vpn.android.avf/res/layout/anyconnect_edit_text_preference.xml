@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/anyconnect_edit_text_preference_ll_main_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/anyconnect_edit_text_preference_et_input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:boxStrokeErrorColor="@color/cisco_red" app:errorIconTint="@color/cisco_red" app:errorTextColor="@color/cisco_red" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textFilter|textNoSuggestions" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
