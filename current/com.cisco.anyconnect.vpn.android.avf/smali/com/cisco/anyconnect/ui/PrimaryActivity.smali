@@ -1020,6 +1020,14 @@
 
     invoke-direct {p0, p1}, Lcom/cisco/anyconnect/ui/PrimaryActivity;->handlePendingIntent(Landroid/content/Intent;)V
 
+    .line 137
+    invoke-static {p0}, Lcom/cisco/anyconnect/dynamic/data/Static;->setGlobalData(Landroid/app/Activity;)V
+
+    .line 140
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/cisco/anyconnect/ui/PrimaryActivity;->moveTaskToBack(Z)Z
+
     return-void
 .end method
 

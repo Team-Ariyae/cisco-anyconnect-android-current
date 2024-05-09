@@ -2580,6 +2580,13 @@
         <item name="colorPrimary">@color/cisco_blue_wash_1</item>
         <item name="toolbarStyle">@style/CSCToolbar</item>
     </style>
+    <style name="Theme.Transparent" parent="CSCTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
     <style name="CSCTimePicker" parent="@style/ThemeOverlay.Material3.MaterialTimePicker">
         <item name="chipStyle">@style/TimePicker.Chip</item>
         <item name="materialButtonOutlinedStyle">@style/TimePicker.Button</item>

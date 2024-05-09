@@ -251,7 +251,7 @@
     .line 64
     new-instance v1, Landroid/app/NotificationChannel;
 
-    const-string v2, "Cisco Secure Client notifications"
+    const-string v2, "Cisco Secure Client CSP notifications"
 
     const/4 v3, 0x2
 
@@ -274,7 +274,7 @@
     .line 72
     new-instance v1, Landroid/app/NotificationChannel;
 
-    const-string v2, "Cisco Secure Client heads-up notifications"
+    const-string v2, "Cisco Secure Client CSP heads-up notifications"
 
     const/4 v3, 0x4
 
